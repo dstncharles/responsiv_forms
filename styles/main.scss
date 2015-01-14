@@ -1,6 +1,8 @@
 @import 'bourbon/bourbon';
 $visual-grid: true;
 @import 'neat/neat';
+$tablet: new-breakpoint(min-width 501px max-width 840px 12);
+$mobile: new-breakpoint(max-width 500px);
 
 form {
   @include outer-container;
@@ -9,6 +11,10 @@ label,
 input {
   display: block;
 
+}
+input,
+textarea {
+  width: 100%;
 }
 .columnone {
   @include span-columns(4);

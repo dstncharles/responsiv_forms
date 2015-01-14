@@ -40,6 +40,10 @@ label,
 input {
   display: block; }
 
+input,
+textarea {
+  width: 100%; }
+
 .columnone {
   float: left;
   display: block;
