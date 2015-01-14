@@ -1,2 +1,22 @@
 @import 'bourbon/bourbon';
+$visual-grid: true;
 @import 'neat/neat';
+
+form {
+  @include outer-container;
+}
+label,
+input {
+  display: block;
+
+}
+.columnone {
+  @include span-columns(4);
+
+}
+.columntwo {
+  @include span-columns(4)
+}
+.columnthr {
+  @include span-columns(4)
+}
