@@ -6,6 +6,8 @@ $mobile: new-breakpoint(max-width 500px);
 
 form {
   @include outer-container;
+  background-color: #00e067;
+  padding: 10px;
 }
 label,
 input {
@@ -15,14 +17,31 @@ input {
 input,
 textarea {
   width: 100%;
-}
-.columnone {
-  @include span-columns(4);
 
 }
+label {
+  font-family: 'Squada One', cursive;
+  font-weight: 700;
+}
+input {
+  
+
+}
+.columnone,
 .columntwo {
-  @include span-columns(4)
+  @include span-columns(4);
+  @include media($tablet) {
+    @include span-columns(6);
+    @include omega(2);
+  }
+
 }
 .columnthr {
-  @include span-columns(4)
+  @include span-columns(4);
+  @include media($tablet) {
+    @include span-columns(12);
+  }
+  @include media($mobile) {
+    @include span-columns(12);
+  }
 }
