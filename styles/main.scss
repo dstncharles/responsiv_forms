@@ -1,5 +1,5 @@
 @import 'bourbon/bourbon';
-$visual-grid: true;
+/* \$visual-grid: true; */
 @import 'neat/neat';
 $tablet: new-breakpoint(min-width 501px max-width 840px 12);
 $mobile: new-breakpoint(max-width 500px);
@@ -24,7 +24,10 @@ label {
   font-weight: 700;
 }
 input {
-  
+  margin-top: 1em;
+  padding: 0.85em 0.15em;
+  width: 100%;
+  color: #595f6e;
 
 }
 .columnone,
@@ -40,6 +43,7 @@ input {
   @include span-columns(4);
   @include media($tablet) {
     @include span-columns(12);
+
   }
   @include media($mobile) {
     @include span-columns(12);
