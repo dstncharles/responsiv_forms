@@ -24,19 +24,15 @@ label,
 input {
   display: block; }
 
-input,
-textarea {
-  width: 100%; }
-
 label {
   font-family: 'Squada One', cursive;
   font-weight: 700; }
 
-input {
+input,
+textarea {
   margin-top: 1em;
   padding: 0.85em 0.15em;
-  width: 100%;
-  color: #595f6e; }
+  width: 100%; }
 
 .columnone,
 .columntwo {
@@ -59,6 +55,16 @@ input {
         margin-right: 0; }
       .columnone:nth-child(2),
       .columntwo:nth-child(2) {
+        margin-right: 0; } }
+  @media screen and (max-width: 500px) {
+    .columnone,
+    .columntwo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .columnone:last-child,
+      .columntwo:last-child {
         margin-right: 0; } }
 
 .columnthr {

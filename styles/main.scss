@@ -14,20 +14,15 @@ input {
   display: block;
 
 }
-input,
-textarea {
-  width: 100%;
-
-}
 label {
   font-family: 'Squada One', cursive;
   font-weight: 700;
 }
-input {
+input,
+textarea {
   margin-top: 1em;
   padding: 0.85em 0.15em;
   width: 100%;
-  color: #595f6e;
 
 }
 .columnone,
@@ -36,6 +31,9 @@ input {
   @include media($tablet) {
     @include span-columns(6);
     @include omega(2);
+  }
+  @include media($mobile) {
+    @include span-columns(12);
   }
 
 }
